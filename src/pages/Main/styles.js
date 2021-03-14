@@ -15,7 +15,7 @@ export const Container = styled.div`
         flex-direction: row;
     
         svg{
-            margin-rigth: 10px;
+            margin-right: 10px;
         }
     }
 
@@ -28,7 +28,7 @@ export const Form = styled.form`
 
     input{
         flex: 1;
-        border: 1px solid #DDD;
+        border: 1px solid ${props => (props.error ? '#FF0000' : '#ddd')};
         padding: 10px 15px;
         border-radius: 4px;
         font-size: 17px;
@@ -59,12 +59,8 @@ export const SubmitButton = styled.button.attrs(props => ({
     display: flex;
     justify-content: center;
     align-items: center;
-
-    &[disable]{
-        /* cursor: not-allowed; */
-        opacity: 0.5;
-    }
-
+    cursor: ${({loading}) => loading ? 'not-allowed' : 'pointer'};
+  
     ${props => props.loading &&
         css`
             svg{
@@ -72,6 +68,41 @@ export const SubmitButton = styled.button.attrs(props => ({
             }
         `
     }
+`;
+
+export const List = styled.ul `
+    list-style: none;
+    margin-top: 20px;
+
+    li{
+        padding: 15px 0;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+
+        & + li {
+            border-top: 1px solid #eee;
+        }
+
+        a {
+            color: #0D2636;
+            text-decoration: none;
+        }
+
+    }
+`;
+
+export const DeleteButton = styled.button.attrs({
+    type: 'button'
+})`
+
+    background: transparent;
+    color: #0D2636;
+    border: 0;
+    padding: 8px 7px;
+    outline: 0;
+    border-radius: 4px;
 `;
 
 

@@ -1,34 +1,39 @@
-<h3 align="center">
+<div align=center>
 
-Desafio realizado no Programa Ignite - Trilha ReactJS - da [Rocketseat], utilizando **HTML**, **CSS**, **JAVASCRIPT**, **ReactJS** e **Typescript**.
+
+<h3>
+
+Projeto realizado no Programa React do Básico ao Avançado - do [SujeitoProgramador], utilizando **ReactJS**.
 
 </h3>
 
-![PRINTS](./public/ui.png)
+![PRINTS](./layout/capa.png)
+
+![PRINTS](./layout/repo.png)
 
 </div>
 
-<br>
-
 ## 📚 **Sobre**
 
-Aplicação de todolist - atividades a fazer, com foco na manipulação do estado no React. 
+Aplicação de listagem de repositórios e suas respectivas issues, utilizando a API do github.
 <br>
 <br>
+
 Funcionalidades:
-- Adicionar uma tarefa;
-- Remover uma tarefa;
-- Marcar e desmarcar uma tarefa como concluída;
+- Adicionar um respositório;
+- Remover uma repositório;
+- Acessar o repositório;
+- Listar as issues de cada repositório;
+- Filtrar as issues (todas, abertas ou fechadas);
 
 <br>
 
 ### 📌  **Tecnologias utilizadas**
-- [React](https://reactjs.org/)
-- [Npm]()
-- [React-router-dom]
-- [Styled-component]()
-- [React-icons]
-- [Axios]
+- React
+- React-router-dom
+- Styled-component
+- React-icons
+- Axios
 
 <br>
 <br>
@@ -37,10 +42,10 @@ Funcionalidades:
 
 ```bash
 # Clone este repositório
-$ git clone https://github.com/Joao-Augusto-Oliveira/desafio1ignite
+$ git clone https://github.com/Joao-Augusto-Oliveira/repos
 
 # Acesse a pasta do projeto no terminal/cmd
-$ cd desafio1ignite
+$ cd repos
 
 # Instale as dependências
 $ yarn
@@ -57,13 +62,12 @@ $ yarn dev
 <h3 align="center">
 Feito com 💜 por <a href="https://www.linkedin.com/in/joão-augusto-oliveira-dos-santos-9b0693195">João Augusto</a>
 <br><br>
-
-  <img alt="Made by Rocketseat" src="https://img.shields.io/badge/made%20by-Rocketseat-%237519C1">
+ 
 </a>
 </h3>
 
 <!-- Links -->
 
-[Rocketseat]: https://rocketseat.com.br/
+[SujeitoProgramador]: https://sujeitoprogramador.com/
 
 
